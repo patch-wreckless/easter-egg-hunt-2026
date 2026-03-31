@@ -1,0 +1,17 @@
+[
+    {
+        "heading": "spring clue",
+        "image": "spring.jpg",
+        "password": "spring"
+    },
+    {
+        "heading": "jelly beans clue",
+        "image": "jelly-beans.jpg",
+        "password": "jelly beans"
+    },
+    {
+        "heading": "basket clue",
+        "image": "basket.jpg",
+        "password": "basket"
+    }
+]

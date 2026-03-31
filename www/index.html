@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easter Egg Hunt</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+
+        <section id="loading">
+            <p>loading...</p>
+        </section>
+
+        <section id="intro" class="hidden">
+            <h1>Easter Egg Hunt 🐣</h1>
+            <p id="intro-text"></p>
+            <button id="start-btn">Start</button>
+        </section>
+
+        <section id="game" class="hidden">
+            <h1 id="clue-heading"></h1>
+            <img id="clue-image" alt="clue image">
+            <input id="password-input" placeholder="password" spellcheck="false">
+            <button id="submit-btn">Submit</button>
+        </section>
+
+        <section id="congratulations" class="hidden">
+            <h1>Congratulations!</h1>
+            <p id="success-text"></p>
+            <p><span id="final-clue-label"></span>: <span id="final-clue-value"></span></p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
