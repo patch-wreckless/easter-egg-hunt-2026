@@ -1,24 +1,26 @@
 # Easter Egg Hunt
 
-## Download The Source
+## Download The Website
 
 _If you're already familiar with Git and GitHub, download the source using your preferred method._
 
-1. Go to the [project homepage](https://github.com/patch-wreckless/easter-egg-hunt-2026)
-2. Click `<> Code` then `Download ZIP`
-3. Extract the `easter-egg-hunt-2026-main.zip` file
+1. Go to the [project homepage](https://github.com/patch-wreckless/easter-egg-hunt-2026).
+2. Click `<> Code` then `Download ZIP`.
+3. Extract the `easter-egg-hunt-2026-main.zip` file.
+    - On Windows, right-click `easter-egg-hunt-2026-main.zip` and select `Extract all...`.
+    - On Mac, double-click `easter-egg-hunt-2026-main.zip`.
 
 ## Create Your Content
 
-Create and update the following files to define the intro message, clues, and success messages:
+Use the following files in the extracted website folder to configure the introduction message, clues, and success messages for the egg hunt:
 
-**content/images/\***
+**www/content/images/\***
 
-The images referenced by the clues.
+Put the images you want to use in this folder.
 
-**content/clues.json**
+**www/content/clues.json**
 
-This file defines the list of clues.
+Use this file to define the list of clues.
 
 Each clue is a piece of text that looks like this:
 
@@ -30,7 +32,9 @@ Each clue is a piece of text that looks like this:
 }
 ```
 
-The file is a list of clues, separated by commas, and surrounded by `[` and `]` characters. Here's an example of a complete file:
+The file is a list of clues, separated by commas, and surrounded by `[` and `]` characters. The website will show the clues in the order they appear in this file.
+
+This is an example of a complete file with three clues:
 
 ```json
 [
@@ -52,13 +56,21 @@ The file is a list of clues, separated by commas, and surrounded by `[` and `]` 
 ]
 ```
 
-**content/intro.txt**
+![spring clue](./docs/images/spring-clue.png)
 
-A text file the welcome message and instructions to show when the website loads.
+![jelly beans clue](./docs/images/jelly-beans-clue.png)
 
-**content/success.json**
+![basket clue](./docs/images/basket-clue.png)
 
-This file defines the messages the player sees when they solve all the clues.
+**www/content/intro.txt**
+
+Use this file to configure the welcome message and instructions to show at the beginning of the egg hunt.
+
+![intro page](./docs/images/intro.png)
+
+**www/content/success.json**
+
+Use this file to define the messages to show when the egg hunt is successfully completed.
 
 ```json
 {
@@ -67,6 +79,8 @@ This file defines the messages the player sees when they solve all the clues.
     "finalClueValue": "1234"
 }
 ```
+
+![success page](./docs/images/success.png)
 
 ## A Web Server
 
