@@ -41,8 +41,6 @@ function renderClue() {
     clueHeading.innerText = clue.heading;
     clueImage.src = "content/images/" + clue.image;
     passwordInput.value = "";
-    // todo: remove
-    passwordInput.value = clue.password.toLowerCase();
     passwordInput.classList.remove("error");
 }
 
