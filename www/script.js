@@ -53,16 +53,25 @@ function markWrong() {
     }, 250);
 }
 
-startBtn.addEventListener("click", () => {
+function handleStart() {
     showGame();
     renderClue();
+}
+
+startBtn.addEventListener("click", handleStart);
+
+startBtn.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        handleStart();
+    }
 });
 
 passwordInput.addEventListener("input", () => {
     passwordInput.classList.remove("error");
 });
 
-submitBtn.addEventListener("click", () => {
+function handleSubmit() {
     const guess = passwordInput.value.trim().toLowerCase();
     const correct = clues[index].password.toLowerCase();
 
@@ -78,6 +87,22 @@ submitBtn.addEventListener("click", () => {
     }
 
     showCongratulations();
+}
+
+submitBtn.addEventListener("click", handleSubmit);
+
+passwordInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        handleSubmit();
+    }
+});
+
+submitBtn.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        handleSubmit();
+    }
 });
 
 (async function init() {
