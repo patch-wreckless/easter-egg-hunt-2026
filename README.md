@@ -24,7 +24,7 @@ Each clue is a piece of text that looks like this:
 
 ```json
 {
-    "heading": "<the text to show>",
+    "heading": "<the optional text to show>",
     "image": "<the name of the image file to show>",
     "password": "<the password to unlock the next clue>"
 }
