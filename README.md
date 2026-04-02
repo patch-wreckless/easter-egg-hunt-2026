@@ -52,10 +52,6 @@ The file is a list of clues, separated by commas, and surrounded by `[` and `]` 
 ]
 ```
 
-**content/code.txt**
-
-A text file containing the Easter basket unlock code.
-
 **content/intro.txt**
 
 A text file the welcome message and instructions to show when the website loads.
