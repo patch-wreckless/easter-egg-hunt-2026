@@ -39,7 +39,7 @@ function showCongratulations() {
 function renderClue() {
     const clue = clues[index];
     clueHeading.innerText = clue.heading;
-    clueImage.src = "content/" + clue.image;
+    clueImage.src = "content/images/" + clue.image;
     passwordInput.value = "";
     // todo: remove
     passwordInput.value = clue.password.toLowerCase();
