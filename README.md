@@ -82,16 +82,13 @@ Use this file to define the messages to show when the egg hunt is successfully c
 
 ![success page](./docs/images/success.png)
 
-## A Web Server
+## Run The Website
 
-_If you're already familiar with web servers, use which ever server you like._
+- On Windows, double-click [`run-on-windows.bat`](./run-on-windows.bat)
+- On Mac, double-click [`run-on-mac.command`](./run-on-mac.command)
 
-Web browsers will open HTML files directly from your computer but generally don't like to load the other files they reference so you'll need to run a web server to serve this site.
+Running the website will open the website in your browser, and create a second window that looks something like this:
 
-1. Download and install [`python3`](https://www.python.org/downloads/)
-2. Open a terminal
-    - `Windows Powershell` or `Command Prompt` on Windows
-3. In the terminal, navigate to the `www` folder in the extracted source folder
-    - e.g. `cd ~/Downloads/easter-egg-hunt-2026-main/www`
-4. In the terminal, run `python3 -m http.server 8000`
-5. Open http://localhost:8000/ in your browser
+![server terminal](./docs/images/server.png)
+
+The text may be slightly different, especially on Windows, but the details aren't important. As long as that window is open the website is running and should be available at http://localhost:8000 in your browser. Trying to run the website when it's already running will not work, so make sure you close this window when you're finished.
