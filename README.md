@@ -1,5 +1,11 @@
 # Easter Egg Hunt
 
+This project lets you create your own custom Easter egg hunt that others can play in their web browser.
+To set it up, you (the organizer) edit the clues and intro text in the provided files. Each clue leads to the next, and you decide the correct answers and how the hunt progresses. Once you’ve added your own content, you can share the page with players.
+
+When someone opens the page, they click Start Hunt and follow the clues you’ve created. As they solve each one, they unlock the next step until they reach the end of the hunt.
+No special software or setup is required for players—just open the page and start playing.
+
 ## Download The Website
 
 _If you're already familiar with Git and GitHub, download the source using your preferred method._
